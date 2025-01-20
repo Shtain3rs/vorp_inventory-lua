@@ -3,54 +3,34 @@ Lang = "English"
 Config = {
 	-- ======================= DEVELOPMENT ============================== --
 	Debug                      = false, -- If your server is live set this to false.  to true only if you are testing things
-
-	InventoryOrder             = "items", -- Items or weapons what should should first in inventory
-
+	InventoryOrder             = "weapons", -- Items or weapons what should should first in inventory
 	DevMode                    = false, -- If your server is live set this to false.  to true only if you are testing things (auto load inventory when script restart and before character selection. Alos add /getInv command)
-
 	dbupdater                  = true,
 	-- ======================= CONFIGURATION ============================= --
 	ShowCharacterNameOnGive    = false, -- When giving an item, show the character name of nearby players instead of their player ID. if set to false, show the player ID
-
 	DoubleClickToUse           = true, -- If toggled to false, items in inventory will right click then left click "use"
-
 	NewPlayers                 = false, -- If you dont want new players to give money or items then set to true. this can avoid cheaters giving stuff on first join
-
 	CoolDownNewPlayer          = 120, -- In seconds how long they have to wait before they can give items or money
 
+	
 	-- GOLD ITEM LIKE DOLLARS
 	UseRolItem                 = false, -- To show rol in inventory
-
-	UseGoldItem                = false,
-
-	AddGoldItem                = false,   -- Should there be an item in inventory to represent gold
-
+	UseGoldItem                = true,
+	AddGoldItem                = true,   -- Should there be an item in inventory to represent gold
 	AddDollarItem              = true,    -- Should there be an item in inventory to represent dollars
-
 	AddAmmoItem                = true,    -- Should there be an item in inventory to represent the gun belt
-
-	InventorySearchable        = true,    -- Should the search bar appear in inventories
-
-	InventorySearchAutoFocus   = true,    -- Search autoofocuses when you type
-
+	InventorySearchable        = false,    -- Should the search bar appear in inventories
+	InventorySearchAutoFocus   = false,    -- Search autoofocuses when you type
 	DisableDeathInventory      = true,    -- Prevent the ability to access inventory while dead
 
 	OpenKey                    = 0xC1989F95, -- I
-
 	UseFilter                  = true,    -- If true then will use the filter opening inventory
-
 	Filter                     = "OJDominoBlur",
-
 	PickupKey                  = 0x760A9C6F, -- G key PROMPT PICKUP
-
 	discordid                  = true,    -- Turn to true if ur using discord whitelist
-
 	DeleteOnlyDontDrop         = false,   -- If true then dropping items only deletes from inventory and box on the floor is not created
-
 	UseLanternPutOnBelt        = true,    -- If true then lanterns will be put on belt
-
 	WeightMeasure              = "kg",    -- Weight measure (kg, lbs, etc)
-
 	DeleteItemOnUseWhenExpired = false,   -- if true items on use that are expired will be deleted
 
 	-- =================== CLEAR ITEMS WEAPONS MONEY GOLD ===================== --
