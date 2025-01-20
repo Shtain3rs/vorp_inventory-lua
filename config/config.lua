@@ -1,5 +1,7 @@
 Lang = "English"
 
+-- TO DO : startItems, startWeapons, spawnableProps
+
 Config = {
 	-- ======================= DEVELOPMENT ============================== --
 	Debug                      = false, -- If your server is live set this to false.  to true only if you are testing things
@@ -39,34 +41,34 @@ Config = {
 
 	OnPlayerRespawn            = {
 		Money = {
-			JobLock         = { "police", "doctor" }, -- Wont remove from these jobs
+			JobLock         = {""}, -- Wont remove from these jobs
 			ClearMoney      = true,          -- If true then removes all money from player
 			MoneyPercentage = false,         -- If false wont use percentage if you add number   0.1 = 10% of money user have instead of all
 		},
 		Items = {
-			JobLock       = { "police", "doctor" },
-			itemWhiteList = { "consumable_raspberrywater", "ammorevolvernormal" }, -- Dont delete these items
+			JobLock       = {""},
+			itemWhiteList = {"tool_box"}, -- Dont delete these items
 			AllItems      = true,                                         -- If true then removes all items from player
 		},
 		Weapons = {
-			JobLock           = { "police", "doctor" },
-			WeaponWhitelisted = { "WEAPON_MELEE_KNIFE", "WEAPON_BOW" }, -- Dont delete these weapons
+			JobLock           = {""},
+			WeaponWhitelisted = {""}, -- Dont delete these weapons
 			AllWeapons        = true,                          -- If true then removes all weapons from player
 		},
 		Ammo = {
-			JobLock = { "police", "doctor" }, -- Wont remove from these jobs
+			JobLock = {""}, -- Wont remove from these jobs
 			AllAmmo = true,          -- If true then removes all ammo from player
 		},
 		Gold = {
-			JobLock        = { "police", "doctor" },
-			ClearGold      = false,
+			JobLock        = {""},
+			ClearGold      = true,
 			GoldPercentage = false,
 		}
 	},
 
 	-- HOW MANY WEAPONS ALLOWED PER PLAYER FOR ITEMS IS IN VORP CORE CONFIG
 	MaxItemsInInventory        = {
-		Weapons = 6,
+		Weapons = 4,
 	},
 
 	-- HERE YOU CAN SET THE MAX AMOUNT OF WEAPONS PER JOB (IF YOU WANT)
